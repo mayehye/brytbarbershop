@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRYT Barbershop - Premium Cuts & Classic Shaves</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image folder/SHOP-ICON/icon.jpg">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Logo & Brand -->
+            <div class="navbar-logo">
+                <img src="image folder/SHOP-ICON/icon.jpg" alt="BRYT Logo" class="logo-img">
+                <span class="brand-name">BRYT BARBERSHOP</span>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Center Navigation -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#barbers" class="nav-link">Barbers</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Book Now Button -->
+            <a href="https://wa.me/1234567890?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20at%20BRYT%20Barbershop" class="btn-book" target="_blank">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-left">
+                <span class="gold-subtitle">SHARP CUTS. CONFIDENT YOU.</span>
+                <h1 class="hero-title">A CUT ABOVE<br>THE REST</h1>
+                <p class="hero-description">Premium cuts, classic shaves, and fresh fades. Experience the difference that professionalism and passion bring to grooming.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/1234567890?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20at%20BRYT%20Barbershop" class="btn-primary" target="_blank">Book Your Appointment</a>
+                    <button class="btn-play" id="playBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Watch Our Story
+                    </button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="image folder/barber-image/5.jpg" alt="Premium Barber Cut" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (Floating Cards) -->
+    <section class="services-cards" id="services">
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 7l-1.5-1.5a2 2 0 0 0-2.83 0l-14.83 14.83a2 2 0 0 0 0 2.83l1.5 1.5a2 2 0 0 0 2.83 0l14.83-14.83a2 2 0 0 0 0-2.83z"></path>
+                    </svg>
+                </div>
+                <h3 class="service-title">Precision Cuts</h3>
+                <p class="service-desc">Expert fades, tapering, and detailed line work for a sharp, polished look.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                </div>
+                <h3 class="service-title">Classic Shaves</h3>
+                <p class="service-desc">Traditional hot shaves with premium lotions and techniques for smooth skin.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 10h10M7 14h10M9 18h6"></path>
+                        <circle cx="12" cy="6" r="4"></circle>
+                    </svg>
+                </div>
+                <h3 class="service-title">Beard Grooming</h3>
+                <p class="service-desc">Professional beard trimming, shaping, and conditioning for a distinguished look.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                        <line x1="9" y1="9" x2="15" y2="9"></line>
+                        <line x1="9" y1="15" x2="15" y2="15"></line>
+                    </svg>
+                </div>
+                <h3 class="service-title">Premium Products</h3>
+                <p class="service-desc">High-quality grooming products handpicked for optimal results and care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEET OUR BARBERS SECTION -->
+    <section class="barbers-section" id="barbers">
+        <div class="barbers-header">
+            <span class="gold-subtitle-dark">OUR TEAM</span>
+            <h2 class="section-title">Meet Our Barbers</h2>
+            <p class="section-description">Skilled professionals dedicated to your perfect look.</p>
+        </div>
+
+        <div class="barbers-grid">
+            <div class="barber-card">
+                <img src="image folder/PROFILE/Addae4.jfif" alt="Addae" class="barber-image">
+                <h3 class="barber-name">Addae</h3>
+                <a href="https://wa.me/1234567890?text=Hi%20Addae%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20you%20at%20BRYT%20Barbershop" class="btn-message" target="_blank">Message</a>
+            </div>
+
+            <div class="barber-card">
+                <img src="image folder/PROFILE/Bright2.jfif" alt="Bright" class="barber-image">
+                <h3 class="barber-name">Bright</h3>
+                <a href="https://wa.me/233547636555?text=Hi%%2Bryt%20I%27d%20like%20to%20book%20an%20appointment%20with%20Bright%20at%20BRYT%20Barbershop" class="btn-message" target="_blank">Message</a>
+            </div>
+
+            <div class="barber-card">
+                <img src="image folder/PROFILE/Danny1.JPEG" alt="Danny" class="barber-image">
+                <h3 class="barber-name">Danny</h3>
+                <a href="https://wa.me/233547636555?text=Hi%20Bryt%2C%20I%27d%20like%20to%20book%20appointment%20with%20Danny%20at%20BRYT%20Barbershop" class="btn-message" target="_blank">Message</a>
+            </div>
+
+            <div class="barber-card">
+                <img src="image folder/PROFILE/kwame3.jfif" alt="Kwame" class="barber-image">
+                <h3 class="barber-name">Kwame</h3>
+                <a href="https://wa.me/233547636555?text=Hi%20%Bryt%202C%20I%27d%20like%20to%20book%20appointment%20with%20%20KWame%20at%20BRYT%20Barbershop" class="btn-message" target="_blank">Message</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING CTA BANNER -->
+    <section class="booking-cta" style="background-image: url('image folder/barber-image/5.jpg')">
+        <div class="booking-overlay"></div>
+        <div class="booking-content">
+            <div class="booking-left">
+                <span class="booking-gold-text">BOOK NOW</span>
+                <h2 class="booking-title">Ready for a Fresh Cut?</h2>
+                <p class="booking-text">Don't wait another day to experience premium grooming. Our expert barbers are ready to transform your look.</p>
+            </div>
+            <a href="https://wa.me/233547636555?text=Hello%20BRYT%20I%20want%20to%20book%20an%20appointment%20at%20BRYT%20Barbershop" class="btn-booking" target="_blank">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="gallery-title">Our Work</h2>
+        <p class="gallery-subtitle">Browse our portfolio of premium cuts and styles</p>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-image="image folder/GALLERY/1.jpg">
+                <img src="image folder/GALLERY/1.jpg" alt="Gallery Image 1">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/2.jpg">
+                <img src="image folder/GALLERY/2.jpg" alt="Gallery Image 2">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/3.jpg">
+                <img src="image folder/GALLERY/3.jpg" alt="Gallery Image 3">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/4.jpg">
+                <img src="image folder/GALLERY/4.jpg" alt="Gallery Image 4">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/5.jpg">
+                <img src="image folder/GALLERY/5.jpg" alt="Gallery Image 5">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/6.jpg">
+                <img src="image folder/GALLERY/6.jpg" alt="Gallery Image 6">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/7.jpg">
+                <img src="image folder/GALLERY/7.jpg" alt="Gallery Image 7">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/9.jpg">
+                <img src="image folder/GALLERY/9.jpg" alt="Gallery Image 8">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/10.jpg">
+                <img src="image folder/GALLERY/10.jpg" alt="Gallery Image 9">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/11.jpg">
+                <img src="image folder/GALLERY/11.jpg" alt="Gallery Image 10">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/12.jpg">
+                <img src="image folder/GALLERY/12.jpg" alt="Gallery Image 11">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/13.jpg">
+                <img src="image folder/GALLERY/13.jpg" alt="Gallery Image 12">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/14.jpg">
+                <img src="image folder/GALLERY/14.jpg" alt="Gallery Image 13">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="image folder/GALLERY/15.jpg">
+                <img src="image folder/GALLERY/15.jpg" alt="Gallery Image 14">
+                <div class="gallery-overlay">
+                    <span class="gallery-zoom">🔍</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="Lightbox Image">
+        <button class="lightbox-prev">&#10094;</button>
+        <button class="lightbox-next">&#10095;</button>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <h2 class="section-title-dark">About BRYT Barbershop</h2>
+            <p class="about-text">At BRYT Barbershop, we believe that a great haircut is more than just a trim—it's an experience. Since our founding, we've been committed to delivering premium grooming services with exceptional attention to detail. Our barbers are trained professionals who understand that every client deserves personalized care and impeccable craftsmanship.</p>
+            <p class="about-text">We specialize in modern cuts, classic shaves, and premium beard grooming using only the finest products available. Our barbershop is a space where tradition meets contemporary style, creating the perfect environment for relaxation and transformation.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Dormaa Ahenkro<br>Aduana Kurom,Trukfit-Light</p>
+                </div>
+                <div class="contact-item">
+                    <h3>⏰ Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 9:00 PM<br>Sat: 12:00 PM - 6:00 PM<br>Sun: 3:00 PM - 6:00 PM</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 Contact</h3>
+                    <p>Phone: +233547636555<br><a href="https://wa.me/+233547636555" target="_blank">WhatsApp: 0547636555 </a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image folder/SHOP-ICON/icon.jpg" alt="BRYT Logo" class="footer-logo-img">
+                <span>BRYT BARBERSHOP</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#barbers">Barbers</a>
+                <a href="#gallery">Gallery</a>
+            </div>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/danny_barber225?igsh=MW91cWZiejR0ZTZiMg==" target="_blank" title="Instagram"> <img src="image folder/SOCIAL/instagram.png" alt="Instagram" class="instagram"> </a>
+                <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
+                <a href="https://tiktok.com" target="_blank" title="TikTok">🎵</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BRYT Barbershop. All rights reserved. | Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
