@@ -77,10 +77,10 @@ body {
 }
 
 .logo-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid var(--gold);
+    width: 300px;
+    height: 80px;
+    border-radius: 5%;
+
     object-fit: cover;
 }
 
@@ -406,7 +406,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 2rem;
 }
 
@@ -426,8 +426,8 @@ body {
 }
 
 .barber-image {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160x;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 1rem;
@@ -863,6 +863,7 @@ body {
         opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -874,6 +875,7 @@ body {
         opacity: 0;
         transform: translateX(30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -884,6 +886,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -894,9 +897,11 @@ body {
         transform: scale(0.8);
         opacity: 0;
     }
+
     50% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(0.8);
         opacity: 0;
@@ -919,6 +924,7 @@ body {
    RESPONSIVE DESIGN
    ============================================ */
 @media (max-width: 768px) {
+
     /* Navbar Responsive */
     .nav-links {
         position: absolute;
@@ -1024,6 +1030,7 @@ body {
 }
 
 @media (max-width: 480px) {
+
     /* Navbar Mobile */
     .navbar-container {
         padding: 1rem;
@@ -1140,6 +1147,6 @@ body {
     }
 }
 
-.instagram{
-    width:20px;
+.instagram {
+    width: 20px;
 }
