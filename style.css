@@ -806,10 +806,9 @@ body {
 }
 
 .footer-logo-img {
-    width: 35px;
+    width: 100px;
     height: 35px;
-    border-radius: 50%;
-    border: 2px solid var(--gold);
+    border-radius: 5%;
     object-fit: cover;
 }
 
@@ -831,9 +830,9 @@ body {
 
 .footer-socials {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.4rem;
     justify-content: flex-end;
-    font-size: 1.3rem;
+    font-size: 1.9rem;
 }
 
 .footer-socials a {
