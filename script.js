@@ -11,6 +11,78 @@ const navLinks = document.getElementById('navLinks');
 const navbar = document.getElementById('navbar');
 const navLink = document.querySelectorAll('.nav-link');
 
+// Appointment message modal
+const messageModal = document.getElementById('messageModal');
+const messageModalClose = document.getElementById('messageModalClose');
+const appointmentForm = document.getElementById('appointmentForm');
+const appointmentFormError = document.getElementById('appointmentFormError');
+const appointmentDate = document.getElementById('appointmentDate');
+const messageButtons = document.querySelectorAll('.btn-message');
+const bookingButtons = document.querySelectorAll('.booking-button');
+const whatsappNumber = '233547636555';
+
+function openMessageModal() {
+    messageModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('appointmentName').focus();
+}
+
+function closeMessageModal() {
+    messageModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+    appointmentFormError.textContent = '';
+}
+
+messageButtons.forEach(button => {
+    button.addEventListener('click', openMessageModal);
+});
+
+bookingButtons.forEach(button => {
+    button.addEventListener('click', openMessageModal);
+});
+
+messageModalClose.addEventListener('click', closeMessageModal);
+messageModal.addEventListener('click', event => {
+    if (event.target === messageModal) {
+        closeMessageModal();
+    }
+});
+
+appointmentDate.min = new Date().toISOString().split('T')[0];
+
+appointmentForm.addEventListener('submit', event => {
+    event.preventDefault();
+    appointmentFormError.textContent = '';
+
+    const formData = new FormData(appointmentForm);
+    const name = formData.get('name').toString().trim();
+    const location = formData.get('location').toString().trim();
+    const date = formData.get('date').toString();
+    const time = formData.get('time').toString();
+    const optionalMessage = formData.get('message').toString().trim();
+
+    if (!name || !location || !date || !time) {
+        appointmentFormError.textContent = 'Please complete Name, Location, Preferred Date, and Preferred Time.';
+        return;
+    }
+
+    const whatsappMessage = `Hello BRYT Barbershop 👋
+
+I would like to make an appointment.
+
+Name: ${name}
+Location: ${location}
+Date: ${date}
+Time: ${time}
+
+Message: ${optionalMessage}
+
+Thank you.`;
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    closeMessageModal();
+});
+
 // Toggle hamburger menu
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -133,7 +205,7 @@ const playBtn = document.getElementById('playBtn');
 playBtn.addEventListener('click', () => {
     // Create and show a modal with video
     // This is a placeholder - you can integrate with YouTube or Vimeo
-    alert('🎬 Video Player\n\nIntegrate with YouTube or Vimeo here.\nReplace this with your video content.');
+    //alert('🎬 Video Player\n\nIntegrate with YouTube or Vimeo here.\nReplace this with your video content.');
 });
 
 // ============================================

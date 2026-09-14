@@ -37,8 +37,7 @@
             </ul>
 
             <!-- Book Now Button -->
-            <a href="https://wa.me/+2330547636555?text=Hello%20%20I%20want%20to%20book%20an%20appointment%20at%20BRYT%20Barbershop"
-                class="btn-book" target="_blank">Book Now</a>
+            <button type="button" class="btn-book booking-button">Book Now</button>
         </div>
     </nav>
 
@@ -51,8 +50,7 @@
                 <p class="hero-description">Premium cuts, classic shaves, and fresh fades. Experience the difference
                     that professionalism and passion bring to grooming.</p>
                 <div class="hero-buttons">
-                    <a href="https://wa.me/+2330547636555?text=Hello%2C%20I%20want%20to%20book%20an%20appointment%20at%20BRYT%20Barbershop"
-                        class="btn-primary" target="_blank">Book Your Appointment</a>
+                    <button type="button" class="btn-primary booking-button">Book Your Appointment</button>
                     <button class="btn-play" id="playBtn">
 
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -133,15 +131,13 @@
             <div class="barber-card">
                 <img src="image folder/PROFILE/Danny De Barber.jpg" alt="Bright" class="barber-image">
                 <h3 class="barber-name">Danny De Barber</h3>
-                <a href="https://wa.me/233547636555?text=Hi%20Bryt%20I%20%20like%20to%20book%20an%20appointment%20with%20Danny%20De%20Barber%20at%20BRYT%20Barbershop"
-                    class="btn-message" target="_blank">Message</a>
+                <button type="button" class="btn-message">Message</button>
             </div>
 
             <div class="barber-card">
                 <img src="image folder/PROFILE/Berg De Barber.jpg" alt="Addae" class="barber-image">
                 <h3 class="barber-name">Berg De Barber</h3>
-                <a href="https://wa.me/+2330547636555?text=Hi%20Bryt%2C%20I%27d%20like%20to%20book%20an%20appointment
-                %20with%20Berg%20De%20Barber%20at%20BRYT%20Barbershop" class="btn-message" target="_blank">Message</a>
+                <button type="button" class="btn-message">Message</button>
             </div>
 
 
@@ -149,22 +145,19 @@
             <div class="barber-card">
                 <img src="image folder/PROFILE/Icon De Barber.jpg" alt="Danny" class="barber-image">
                 <h3 class="barber-name">Icon De Barber</h3>
-                <a href="https://wa.me/233547636555?text=Hi%20Bryt%2C%20I%27d%20like%20to%20book%20appointment%20with%20Icon%20De%20Barber%20at%20BRYT%20Barbershop"
-                    class="btn-message" target="_blank">Message</a>
+                <button type="button" class="btn-message">Message</button>
             </div>
 
             <div class="barber-card">
                 <img src="image folder/PROFILE/Pablo De Barber.jpg" alt="Kwame" class="barber-image">
                 <h3 class="barber-name">Pablo De Barber</h3>
-                <a href="https://wa.me/233547636555?text=Hi%20%Bryt%202C%20I%27d%20like%20to%20book%20appointment%20with%20%20Pablo%20De%20Barber%20at%20BRYT%20Barbershop"
-                    class="btn-message" target="_blank">Message</a>
+                <button type="button" class="btn-message">Message</button>
             </div>
 
             <div class="barber-card">
                 <img src="image folder/PROFILE/Wise De Barber.jpg" alt="Kwame" class="barber-image">
                 <h3 class="barber-name">Wise De Barber</h3>
-                <a href="https://wa.me/233547636555?text=Hi%20%Bryt%202C%20I%27d%20like%20to%20book%20appointment%20with%20%20Wise%20De%20Barber%20at%20BRYT%20Barbershop"
-                    class="btn-message" target="_blank">Message</a>
+                <button type="button" class="btn-message">Message</button>
             </div>
         </div>
     </section>
@@ -179,8 +172,7 @@
                 <p class="booking-text">Don't wait another day to experience premium grooming. Our expert barbers are
                     ready to transform your look.</p>
             </div>
-            <a href="https://wa.me/233547636555?text=Hello%20BRYT%20I%20want%20to%20book%20an%20appointment%20at%20BRYT%20Barbershop"
-                class="btn-booking" target="_blank">Book Appointment</a>
+            <button type="button" class="btn-booking booking-button">Book Appointment</button>
         </div>
     </section>
 
@@ -284,6 +276,42 @@
         <button class="lightbox-next">&#10095;</button>
     </div>
 
+    <!-- APPOINTMENT MESSAGE MODAL -->
+    <div class="message-modal" id="messageModal" role="dialog" aria-modal="true" aria-labelledby="messageModalTitle">
+        <div class="message-modal-content">
+            <button type="button" class="message-modal-close" id="messageModalClose" aria-label="Close appointment form">&times;</button>
+            <span class="gold-subtitle-dark">BOOK YOUR VISIT</span>
+            <h2 id="messageModalTitle">Appointment Details</h2>
+            <p class="message-modal-intro">Tell us when and where you would like your fresh cut.</p>
+            <form id="appointmentForm" novalidate>
+                <div class="form-field">
+                    <label for="appointmentName">Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="appointmentName" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="appointmentLocation">Location <span aria-hidden="true">*</span></label>
+                    <input type="text" id="appointmentLocation" name="location" autocomplete="street-address" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="appointmentDate">Preferred Date <span aria-hidden="true">*</span></label>
+                        <input type="date" id="appointmentDate" name="date" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="appointmentTime">Preferred Time <span aria-hidden="true">*</span></label>
+                        <input type="time" id="appointmentTime" name="time" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="appointmentMessage">Message <span class="optional">(optional)</span></label>
+                    <textarea id="appointmentMessage" name="message" rows="3"></textarea>
+                </div>
+                <p class="form-error" id="appointmentFormError" role="alert"></p>
+                <button type="submit" class="btn-whatsapp">Continue to WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
     <!-- ABOUT SECTION -->
     <section class="about-section" id="about">
         <div class="about-container">
@@ -337,10 +365,24 @@
             </div>
             <div class="footer-socials">
                 <a href="https://www.instagram.com/danny_barber225?igsh=MW91cWZiejR0ZTZiMg==" target="_blank"
-                    title="Instagram"> <img src="image folder/SOCIAL/instagram.png" alt="Instagram" class="instagram">
+                    title="Instagram" aria-label="Instagram">
+                    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17.5" cy="6.5" r="1"></circle>
+                    </svg>
                 </a>
-                <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
-                <a href="https://tiktok.com" target="_blank" title="TikTok">🎵</a>
+                <a href="https://facebook.com" target="_blank" title="Facebook" aria-label="Facebook">
+                    <svg class="social-icon social-icon-facebook" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M14 8h3V3h-3c-3.3 0-5 2-5 5v3H6v5h3v5h5v-5h3l1-5h-4V8c0-.7.3-1 1-1Z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@bryt.barbershop?_r=1&_t=ZS-96hOyvTcHDg" target="_blank" title="TikTok" aria-label="TikTok">
+                    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M15 3v11a4 4 0 1 1-3-3.9"></path>
+                        <path d="M15 3c.5 2.5 2 4 4.5 4"></path>
+                    </svg>
+                </a>
             </div>
         </div>
         <div class="footer-bottom">
